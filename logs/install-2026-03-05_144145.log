@@ -1,0 +1,8 @@
+[1;34m[i][0m Selections: marktext
+[1;34m[i][0m Log file: ./logs/install-2026-03-05_144145.log
+[1;34m[i][0m ==> MarkText (marktext)
+[1;34m[i][0m Installing MarkText...
+ -> marktext-bin-0.17.1-2 is up to date -- skipping
+ there is nothing to do
+[1;32m[✓][0m MarkText installed.
+[1;32m[✓][0m All selected installs completed.

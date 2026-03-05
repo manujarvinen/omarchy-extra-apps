@@ -1,0 +1,23 @@
+# In Omarchy Linux:
+
+# If Davinci Resolve installs but doesn't run
+
+# Paste all this into terminal and run
+
+
+sudo mkdir -p /opt/resolve/libs/disabled
+
+# move Resolve-bundled glib libs out of the way so system ones are used
+for f in \
+  libglib-2.0.so* \
+  libgobject-2.0.so* \
+  libgio-2.0.so* \
+  libgmodule-2.0.so*
+do
+  if ls /opt/resolve/libs/$f >/dev/null 2>&1; then
+    sudo mv /opt/resolve/libs/$f /opt/resolve/libs/disabled/
+  fi
+done
+
+
+# It should be fixed now
