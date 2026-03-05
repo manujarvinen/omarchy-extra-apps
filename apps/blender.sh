@@ -11,6 +11,7 @@ app_install() {
   source "$(dirname "${BASH_SOURCE[0]}")/../lib/core.sh"
 
   info "Installing $APP_NAME..."
-  pacman_install blender
+  # pacman_install blender
+  aur_install blender-bin
   ok "$APP_NAME installed."
 }

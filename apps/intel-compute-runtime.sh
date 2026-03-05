@@ -11,7 +11,7 @@ app_install() {
   source "$(dirname "${BASH_SOURCE[0]}")/../lib/core.sh"
 
   info "Installing $APP_NAME..."
-  pacman_install intel-compute-runtime level-zero-loader clinfo
+  pacman_install intel-compute-runtime level-zero-loader clinfo intel-media-driver intel-gmmlib intel-graphics-compiler
   aur_install intel-level-zero-gpu
   ok "$APP_NAME installed."
 }
