@@ -21,7 +21,3 @@ Make sure install.sh is executable:
 Run:
 
 ```./install.sh```
-
-```
-
-```
